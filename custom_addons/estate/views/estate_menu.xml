@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+            <menuitem id="menu_estate" name="Bienes Raices" web_icon="estate,static\description\icon.png" sequence="1" />
+            <menuitem id="menu_estate_form" name="Anuncios" parent="menu_estate" sequence="10"/>
+                <menuitem id="menu_estate_properties" name="Propiedades" parent="menu_estate_form" action="estate_list_action"/>
+            <menuitem id="menu_estate_type" name="Tipos" parent="menu_estate" sequence="20"/>
+                <menuitem id="menu_estate_type_properties" name="Tipos de propiedades" parent="menu_estate_type" action="estate_type_list_action"/>
+                <menuitem id="menu_estate_tag_properties" name="Etiqueta de propiedad" parent="menu_estate_type" action="estate_tag_list_action"/>
+    </data>
+</odoo>

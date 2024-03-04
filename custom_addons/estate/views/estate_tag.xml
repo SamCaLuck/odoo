@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="estate_tag_form">
+            <field name="name">estate_tag.form</field>
+            <field name="model">estate_tag</field>
+            <field name="arch" type="xml">
+                <form string="Etiqueta de propiedad  ">
+
+                    <sheet>
+
+                        <group>
+                            <field name="name" placeholder="Ingrese nombre de etiqueta "/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="estate_tag_form_action" model="ir.actions.act_window">
+            <field name="name"> Etiqueta de propiedad </field>
+            <field name="res_model">estate_tag</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="estate_tag_form"/>
+        </record>
+
+        <record model="ir.ui.view" id="view_estate_tag_tree">
+            <field name="name">estate_tag.tree</field>
+            <field name="model">estate_tag</field>
+            <field name="arch" type="xml">
+                <tree string="Etiqueta de propiedad">
+                    <field name="name"/>
+
+                </tree>
+            </field>
+        </record>
+
+        <record id="estate_tag_list_action" model="ir.actions.act_window">
+            <field name="name">Etiqueta de propiedad </field>
+            <field name="res_model">estate_tag</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_estate_tag_tree"/>
+        </record>
+    </data>
+</odoo>

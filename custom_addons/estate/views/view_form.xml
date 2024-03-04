@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="estate_list_action" model="ir.actions.act_window">
+            <field name="name">Real Estate Properties</field>
+            <field name="res_model">estate</field>
+            <field name="view_mode">tree</field>
+            <field name="target">current</field>
+        </record>
+    </data>
+</odoo>

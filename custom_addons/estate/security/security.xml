@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record model="ir.module.category" id="group_estate">
+            <field name="name">Permisos estate </field>
+            <field name="description">Permisos para modulos estate</field>
+            <field name="sequence">3</field>
+        </record>
+
+        <record model="res.groups" id="group_user">
+            <field name="name">Estate usuario </field>
+            <field name="category_id" ref="estate.group_estate"/>
+        </record>
+
+          <record model="res.groups" id="group_admin">
+            <field name="name">Estate administrador </field>
+            <field name="category_id" ref="estate.group_estate"/>
+        </record>
+    </data>
+</odoo>
